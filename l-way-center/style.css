@@ -513,6 +513,28 @@ h2 {
     padding-bottom: 20px;
 }
 
+/* История центра */
+.history {
+    padding: 40px 0;
+}
+
+.history__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    align-items: left;
+    place-self: center;
+}
+
+.history__text h3 {
+    text-align: left;
+    color: var(--primary-color);
+}
+
+.history__text h3 {
+    text-align: left;
+}
+
 /* Подвал */
 .footer {
     background-color: var(--primary-color);
@@ -645,3 +667,4 @@ h2 {
     }
 
 }
+
