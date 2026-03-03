@@ -1,0 +1,420 @@
+/* Общие стили */
+:root {
+    /*--primary-color: #8B5CF6; /* Фиолетовый */
+    --primary-color: #1a3ca5; /* Фиолетовый */
+    --secondary-color: #10B981; /* Зелёный */
+    --text-color: #374151; /* Тёмно-серый */
+    --light-gray: #F3F4F6; /* Светло-серый */
+}
+
+body {
+    /*font-family: Arial, sans-serif;*/
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+    font-style: normal;
+    width: device-width;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    overflow-x: ;
+    overflow-y: ;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка */
+.header {
+    background-color: var(--primary-color);
+    padding: 0px;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.header__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header__info p,
+.header__info a {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* Navigation */
+.header__main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 32px;
+    position: fixed;
+    padding: 0px 34px;
+    z-index: 3;
+    /*margin: 0px 50px;*/
+    /*flex-wrap: wrap;*/
+    background-color: white;
+    border-bottom: 1px solid var(--light-gray);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 40px 0px;
+}
+
+.header__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.header__phone {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+    text-decoration: none;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav__link:hover {
+    color: #007bff;
+}
+
+.nav__toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #495057;
+}
+
+/* Баннер */
+.banner {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(16, 185, 129, 0.1));
+    flex-direction: row;
+    padding: 20px 0px;
+    text-align: left;
+    min-height: 640px;
+}
+
+.banner__content h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: 550;
+    z-index: 2;
+}
+
+.banner__content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 0;
+    font-weight: 700;
+    color: var(--primary-color);
+    z-index: 2;
+}
+
+.banner__content p {
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 800px;
+    padding: 0;
+    z-index: 2;
+}
+
+.banner__background {
+
+}
+
+.banner__image {
+    height: 620px;
+    width: 860px;
+    color: transparent;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    padding: 0px;
+    z-index: 1;
+}
+
+/* Услуги */
+.services {
+    padding: 60px 0;
+    background-color: var(--light-gray);
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 20px;
+    box-align: center;
+}
+
+.service__item {
+    background-color: transparent;
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+}
+
+.service__item img {
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.service__item h3 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* О компании */
+.about {
+    padding: 60px 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.about p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.about ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.about li {
+    margin-bottom: 10px;
+}
+
+/* Отзывы */
+.reviews {
+    padding: 60px 0;
+    background-color: var(--light-gray);
+}
+
+.reviews h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.reviews__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 60px;
+}
+
+.review__item {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    pad
+}
+
+.review__person img {
+    padding-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.review__item h4 {
+    color: var(--primary-color);
+}
+
+.review__item p {
+    font-style: italic;
+    flex-grow: 1;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.stars {
+    align-self: flex-end;
+    align-self: center;
+    padding-bottom: 20px;
+}
+
+/* Подвал */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer__info p, .footer__info a {
+    margin: 5px 0;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer__info a:hover {
+    color: var(--secondary-color);
+}
+
+.carousel__button {
+    display: none;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .header__info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner__content h1 {
+        font-size: 2rem;
+    }
+
+    .banner__content h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner__image {
+        display: none;
+    }
+
+    .services__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews {
+        padding: 0;
+        background-color: var(--light-gray);
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .reviews h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2rem;
+        color: var(--primary-color);
+    }
+
+    .reviews__grid {
+        display: flex;
+        flex-direction: row;
+        grid-template-columns: 1fr;
+        margin-right: 10px;
+        gap: 0%;
+    }
+
+    .review__item {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex: 0 0 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .review__persons img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    .review__item h4 {
+        color: var(--primary-color);
+    }
+
+    .review__item p {
+        font-style: italic;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .stars img {
+        align-self: flex-end;
+        align-self: center;
+    }
+
+    .reviews__carousel {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .carousel__button {
+        position: absolute;
+        display: initial;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .carousel__button--prev {
+        left: 10px;
+    }
+
+    .carousel__button--next {
+        right: 10px;
+    }
+
+}
