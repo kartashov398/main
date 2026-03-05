@@ -25,6 +25,10 @@ body {
     width: 100vw;
 }
 
+div {
+    display: block;
+}
+
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
@@ -591,7 +595,39 @@ h2 {
     color: rgb(185, 70, 52);
     font-weight: 700;
     font-size: 16px;
-/*    transition: 500ms;*/
+    transition: 250ms;
+}
+
+/* Юр.инф-я */
+.orginfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orginfo__block {
+    display: flex;
+    /*    box-sizing: border-box;*/
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    background: white;
+    max-width: 1400px;
+    padding: 50px 100px;
+}
+
+.orginfo__block img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.orginfo__table {
+    border: 2px solid var(--primary-color);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 550px;
+    flex: 1 1 0%;
 }
 
 /* Подвал */
