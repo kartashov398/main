@@ -1,0 +1,80 @@
+/* О компании */
+.about {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    align-items: center;
+    place-self: center;
+}
+
+.about__title {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cup__container {
+    display: flex;
+    place-self: center;
+}
+
+.cup__container img {
+    width: 280px;
+    height: 280px;
+}
+
+.about__table {
+    display: flex;
+    width: 100%;
+    border: 2px solid rgb(26, 60, 165);
+    border-radius: 10px;
+    max-width: 840px;
+}
+
+.about__table span[alt="left__block"] {
+    width: 100%;
+    padding: 20px;
+    border-right: 2px solid rgb(26, 60, 165);
+}
+
+.about__table span[alt="right__block"] {
+    width: 100%;
+    padding: 20px;
+}
+
+.about p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.about ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.about li {
+    margin-bottom: 10px;
+}
+
+/*Уже обучили*/
+.trained {
+    background-color: var(--light-gray);
+}
+
+.trained__content {
+    display: flex;
+    width: 100vw;
+    max-width: 1200px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+    flex-wrap: wrap;
+
+}
+
+@media (max-width: 1024px) {
+    .trained__content {
+        width: 100%;
+    }
+}

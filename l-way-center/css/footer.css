@@ -1,0 +1,21 @@
+/* Подвал */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.footer__info p, .footer__info a {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer__info a:hover {
+    color: var(--secondary-color);
+}
+
+.carousel__button {
+    display: none;
+}

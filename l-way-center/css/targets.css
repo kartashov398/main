@@ -1,0 +1,47 @@
+/* Цели */
+.services {
+    background-color: var(--light-gray);
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    place-items: center;
+    gap: 20px;
+    width: 790px;
+    place-self: center;
+    margin-bottom: 20px;
+}
+
+.service__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    align-self: center;
+    height: 250px;
+    width: 250px;
+    transition: 250ms;
+}
+
+.service__item:hover {
+    transform: scale(1.1); /* Увеличение на 10% */
+}
+
+.service__item img {
+    height: 100%;
+    width: 100%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-bottom: -100px;
+}
+
+.service__item h3 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}

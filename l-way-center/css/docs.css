@@ -1,0 +1,69 @@
+/* Лицензия */
+.license__block {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Документы */
+.docs {
+    width: 100%;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+}
+
+.docs__text {
+    max-width: 1400px;
+    align-self: center;
+    padding: 0 20px;
+}
+
+.docs__text a {
+    display: block;
+    padding-left: 20px;
+    color: var(--text-color);
+    text-decoration: underline;
+    transition: 250ms;
+    font-weight: 400;
+    flex: 1;
+}
+
+.docs__text a:hover {
+    color: rgb(185, 70, 52);
+    font-weight: 700;
+    font-size: 17px;
+    transition: 250ms;
+}
+
+/* Юр.инф-я */
+.orginfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orginfo__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    background: white;
+    max-width: 1400px;
+}
+
+.orginfo__block img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.orginfo__table {
+    border: 2px solid var(--primary-color);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 550px;
+    flex: 1 1 0%;
+}

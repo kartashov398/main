@@ -1,0 +1,92 @@
+/* Общие стили */
+:root {
+    --primary-color: #1a3ca5; /* Фиолетовый */
+    --secondary-color: rgb(75, 158, 245); /* голубой */
+    --text-color: #374151; /* Тёмно-серый */
+    --light-gray: #F3F4F6; /* Светло-серый */
+    --red-gray: rgb(185, 70, 52);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: __Montserrat_8bf25d, __Montserrat_Fallback_8bf25d;
+    font-style: normal;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    font-style: normal;
+    width: 100vw;
+}
+
+div {
+    display: block;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    overflow-x: ;
+    overflow-y: ;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+h3 {
+
+}
+
+.red {
+    color: var(--red-gray);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    place-self: center;
+    padding: 40px 0;
+}
+
+.line {
+    display: flex;
+    margin: 20px 0;
+    flex-direction: row;
+    width: 195px;
+    height: 6px;
+    background: rgb(75, 158, 245);
+    justify-self: center;
+}
+
+.short__line {
+    width: 34px;
+    height: 6px;
+    background: rgb(75, 158, 245);
+}
+
+
+@media (max-width: 1024px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+    }
+
+}

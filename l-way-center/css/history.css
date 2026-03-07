@@ -1,0 +1,30 @@
+/* История центра */
+.history {
+    background-image: url('../images/backgrounds/paper.webp'); /* Путь к картинке */
+    background-size: cover; /* Растягивает фон на весь блок */
+    background-repeat: no-repeat; /* Отключает повторение фона */
+    width: 100%;
+}
+
+.history__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    place-items: left;
+    place-self: center;
+    z-index: 2;
+}
+
+.history__text h2 {
+    margin-bottom: 20px;
+}
+
+.history__text h3 {
+    text-align: left;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.history__text p {
+    text-align: left;
+}
