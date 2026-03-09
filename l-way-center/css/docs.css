@@ -67,3 +67,24 @@
     max-width: 550px;
     flex: 1 1 0%;
 }
+
+
+/*=================================МОБИЛЬНЫЙ АДАПТИВ==========================================*/
+
+@media (max-width: 1024px) {
+    .orginfo__block img {
+        display: none;
+    }
+
+    .license__block img {
+        width: 100%;
+    }
+
+    .docs__text {
+        padding: 0;
+    }
+
+    .docs__text a {
+        padding-top: 20px;
+    }
+}

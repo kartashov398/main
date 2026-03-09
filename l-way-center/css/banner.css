@@ -30,7 +30,7 @@
     max-width: 47%;
 }
 
-.banner__content h1 {
+.main__title {
     font-size: 18px;
     margin-bottom: 20px;
     color: black;
@@ -38,9 +38,9 @@
     max-width: 100%;
 }
 
-.banner__content h2 {
+h1 {
     text-align: left;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
     padding: 0;
     font-weight: 700;
@@ -84,4 +84,60 @@
     padding: 0px;
     margin: 0;
     z-index: 1;
+}
+
+.banner__image__mob {
+    display: none;
+}
+
+
+/*=================================МОБИЛЬНЫЙ АДАПТИВ==========================================*/
+
+@media (max-width: 1024px) {
+    .banner {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        height: 1000px;
+    }
+
+    .banner__content {
+        top: 100px;
+        /*left: 20px;*/
+        width: 90%;
+        gap: 20px;
+    }
+
+    .banner__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1;
+        max-width: unset;
+        width: 100%;
+    }
+
+    .main__title {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .banner__image {
+        display: none;
+    }
+
+    .banner__image__mob {
+        display: block;
+        position: initial;
+        width: 92vw;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .banner__content a {
+        max-width: 100%;
+        text-align: center;
+        margin: 0;
+    }
 }

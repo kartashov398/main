@@ -1,6 +1,6 @@
 /* Отзывы */
 .reviews {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     width: 100%;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .review__person img {
-    padding-top: 20px;
+    margin-top: 20px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -46,4 +46,31 @@
     align-self: flex-end;
     align-self: center;
     padding-bottom: 20px;
+}
+
+/*=================================МОБИЛЬНЫЙ АДАПТИВ==========================================*/
+
+@media (max-width: 1024px) {
+    .reviews {
+        margin-bottom: 0;
+    }
+
+    .reviews__grid {
+        display: none;
+    }
+
+    .review__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 350px;
+        gap: 20px;
+    }
+
+    .review__person img {
+        width: 75px;
+        height: 75px;
+        padding-top: 0;
+        /*margin-top: 20px;*/
+    }
 }

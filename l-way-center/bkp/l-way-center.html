@@ -9,48 +9,64 @@
 <body>
     <!-- Шапка -->
     <header class="header">
-        <div class="container">
-            <div class="header__info">
-                <p>г. Краснодар, ул. Карасунская, 60, оф. 28/2; Брянская, 6</p>
-                <p>ПН-ПТ 9:00 - 20:00, СБ-ВС — выходные</p>
-                <a href="mailto:lway@mail.kubannet.ru">lway@mail.kubannet.ru</a>
+        <div class="container__info">
+            <div class="container">
+                <div class="header__info">
+                    <p>г. Краснодар, ул. Карасунская, 60, оф. 28/2; Брянская, 6</p>
+                    <p>ПН-ПТ 9:00 - 20:00, СБ-ВС — выходные</p>
+                    <a href="mailto:lway@mail.kubannet.ru">lway@mail.kubannet.ru</a>
+                </div>
             </div>
         </div>
-        <div class="header__main">
-            <div class="header__logo">L-WAY</div>
-            <nav class="header__nav nav">
-                <button class="nav__toggle" id="navToggle" aria-label="Меню">☰</button>
-                <ul class="nav__list" id="navList">
-                    <li class="nav__item"><a href="#about" class="nav__link">О компании</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
-                    <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
-                    <li class="nav__item"><a href="#license" class="nav__link">Лицензия</a></li>
-                    <li class="nav__item"><a href="#docs" class="nav__link">Документы</a></li>
-                </ul>
-            </nav>
-            <a href="tel:+79183972332" class="header__phone">+7 918 397 23 32</a>
+        <div class="container__navbar">
+            <div class="container">
+                <div class="header__main">
+                    <div class="header__logo"><a href="#banner"><img src="images/icons/logo.png" class="logo"></a></div>
+                    <nav class="header__nav nav">
+                        <button class="nav__toggle" id="navToggle" aria-label="Меню">☰</button>
+                        <ul class="nav__list" id="navList">
+                            <li class="nav__item"><a href="#about" class="nav__link">О компании</a></li>
+                            <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+                            <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                            <li class="nav__item"><a href="#license" class="nav__link">Лицензия</a></li>
+                            <li class="nav__item"><a href="#docs" class="nav__link">Документы</a></li>
+                        </ul>
+                    </nav>
+                    <div class="phone__border">
+                        <a href="tel:+79183972332" class="header__phone">+7 918 397 23 32</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- Баннер -->
-    <section class="banner">
+    <section class="banner" id="banner">
+        <div class="banner__background">
+            <img src="images/backgrounds/banner.webp" alt="background">
+        </div>
         <div class="container">
             <div class="banner__content">
-                <h1>Образовательный центр “Л-Вэй” в Краснодаре</h1>
-                <h2>Иностранные языки и школьные предметы в Краснодаре</h2>
-                <p>Английский, немецкий, французский, испанский, итальянский, греческий, турецкий, арабский, китайский, японский, русский для иностранцев</p>
-                <h2>Подготовка к ОГЭ и ЕГЭ в КРД</h2>
-                <p>Школьные предметы Подготовка к сдаче международных экзаменов FCE, IELTS, TOEFL, CAE, CPЕ и др.</p>
-                <h2>Переводы быстро и на совесть</h2>
-                <p>Устные и письменные, с апостилем и нотариальным заверением</p>
-                <img src="images/welcome/girl.png" alt="L-WAY" class="banner__image">
+                <div class="banner__text">
+                    <h1>Образовательный центр “Л-Вэй” в Краснодаре</h1>
+                    <div class="short__line"></div>
+                    <h2>Иностранные языки и школьные предметы в Краснодаре</h2>
+                    <p>Английский, немецкий, французский, испанский, итальянский, греческий, турецкий, арабский, китайский, японский, русский для иностранцев</p>
+                    <h2>Подготовка к ОГЭ и ЕГЭ в КРД</h2>
+                    <p>Школьные предметы Подготовка к сдаче международных экзаменов FCE, IELTS, TOEFL, CAE, CPЕ и др.</p>
+                    <h2>Переводы быстро и на совесть</h2>
+                    <p>Устные и письменные, с апостилем и нотариальным заверением</p>
+                </div>
+                <a href="">Собеседование, тестирование и пробный урок в группе БЕСПЛАТНО</a>
             </div>
         </div>
+        <img src="images/welcome/girl.png" alt="L-WAY" class="banner__image">
     </section>
 
-    <!-- Услуги -->
+    <!-- Под любые цели -->
     <section class="services">
         <div class="container">
+            <div class="line"></div>
             <h2>Индивидуальный подход для реализации Ваших целей</h2>
             <div class="services__grid">
                 <div class="service__item">
@@ -59,7 +75,7 @@
                 </div>
                 <div class="service__item">
                     <img src="images/for_who/10.png" alt="Для детей с 4 лет и школьников">
-                    <h3>Для детей с 4 лет и школьников</h3>
+                    <h3>Для детей с 4 лет <br>и школьников</h3>
                 </div>
                 <div class="service__item">
                     <img src="images/for_who/11.png" alt="Бизнес">
@@ -82,24 +98,123 @@
     </section>
 
     <!-- О компании -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
+            <div class="line"></div>
             <h2>О компании</h2>
-            <p>Вас приветствует Образовательный Центр "L-WAY", специализирующийся на обучении иностранным языкам, где на первом месте традиционно стоят качество и эффективность!</p>
-            <p>Вы можете начать занятия в любое время и с любого уровня.</p>
-            <ul>
-                <li>Тестирование для определения реального уровня знаний языка на день начала занятий;</li>
-                <li>Современные методики для быстрого овладения основными языковыми навыками;</li>
-                <li>Занятия с квалифицированными преподавателями;</li>
-                <li>Использование новейших мультимедийных программ;</li>
-                <li>Дополнительные услуги: видеотека, аудиотека, библиотека с книгами на английском языке.</li>
-            </ul>
+            <span class="about__title">
+                Вас приветствует Образовательный Центр "L-WAY", специализирующийся на обучении иностранным языкам, где на первом месте традиционно стоят <span class="red">качество</span> и <span class="red">эффективность!</span>
+            </span>
+            <div class="cup__container"><img src="images/icons/cup.png"></div>
+            <div class="about__table">
+                <span alt="left__block">
+                    Вы можете начать занятия <span class="red">в любое время и с любого уровня</span>.<br>Для этого мы предлагаем Вам:<br>
+                    <ul>
+                        <li>Тестирование для определения реального уровня знаний языка на день начала занятий;</li>
+                        <li>Современные методики для быстрого овладения основными языковыми навыками;</li>
+                        <li>Занятия с квалифицированными преподавателями;</li>
+                        <li>Использование новейших мультимедийных программ;</li>
+                        <li>Дополнительные услуги: видеотека, аудиотека, библиотека с книгами на английском языке.</li>
+                    </ul>
+                </span>
+                <span alt="right__block">
+                    Если Ваша работа, образ жизни или реальные перспективы настоятельно диктуют Вам необходимость изучать или совершенствовать Ваш английский язык, то L-WAY - это то, что Вам нужно!<br><br>В нашем центре Вам будет предложена уникальная возможность заниматься английским языком с использованием самой современной технологии, обеспечивающей максимальный прогресс за минимальный промежуток времени по программам, методикам и учебникам Оксфорда и Кембриджа точно так, как уже давно успешно изучают иностранные языки европейцы, американцы, японцы.
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Уже обучили -->
+    <section class="trained">
+        <div class="container">
+            <div class="line"></div>
+            <h2>Уже обучили</h2>
+            <div class="trained__content">
+                <img src="images/experience/1.png" alt="Операторов сотовой связи">
+                <img src="images/experience/2.png" alt="Футбольный клуб">
+                <img src="images/experience/3.png" alt="Строительную компанию">
+                <img src="images/experience/4.png" alt="Агротех">
+                <img src="images/experience/5.png" alt="Продовольственную компанию">
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок услуг -->
+    <section class="offers" id="services">
+        <div class="container">
+            <div class="offer__block" alt="right">
+                <div class="offer_text">
+                    <h2>Иностранные языки</h2>
+                    <div class="short__line"></div>
+                    <p>Изучайте иностранные языки с нами!<br><br>Мы предлагаем высококачественное обучение иностранным языкам для всех возрастов и уровней подготовки. Наши квалифицированные преподаватели с богатым опытом помогут Вам или Вашему ребенку освоить английский, немецкий, французский, испанский и другие языки. В процессе обучения применяем современные методики, чтобы сделать процесс обучения максимально эффективным и увлекательным.<br><br>Наши программы включают: Индивидуальные и групповые занятия Подготовку к международным экзаменам (TOEFL, IELTS, DELF, DELE и другие), ОГЭ и ЕГЭ.</p>
+                </div>
+                <img src="images/services/1.png">
+            </div>
+            <div class="offer__block" alt="left">
+                <img src="images/services/2.png">
+                <div class="offer_text">
+                    <h2>Переводы</h2>
+                    <div class="short__line"></div>
+                    <p>Выполним переводы различного объема и уровня сложности с/на английский, немецкий, французский, испанский, итальянский и другие языки.<br></p>
+                    <ul>
+                        <li>Любая тематика, включая технические тексты.</li>
+                        <li>Профессиональное исполнение в сжатые сроки.</li>
+                        <li>Доступные цены.</li>
+                        <li>Компьютерное оформление.</li>
+                        <li>Возможна корректировка переводов носителями языка.</li>
+                        <li>Производится художественное оформление и форматирование текста.</li>
+                        <li>Возможно сканирование графических объектов, верстка текста.</li>
+                    </ul>
+                    <p>Предоставляются услуги устного перевода с выездом в другие города и страны.</p>
+                </div>
+            </div>
+            <div class="offer__block" alt="right">
+                <div class="offer_text">
+                    <h2>Russian for foreigners</h2>
+                    <div class="short__line"></div>
+                    <p>The Education Training Centre "L-way" offers language courses for all levels and requirements. From complete beginners to those just needing to brush up their language skills, courses can be tailored to suit the demands of the individual with an emphasis on general study, tourism, business, law, medicine etc. Study can be arranged in groups, or individually, with teachers who have between 15 and 30 years experience teaching Russian to students from over 80 countries. A fundamental beginners course is taught over 5 months (400 hours), which enables students to speak freely in many different situations.<br><br>Our course costs $ 300/240/200 per week (20 hours) for tuition in groups of 2/4/6 students and $400 for individuals.<br><br>In addition to Russian lessons we can arrange private accommodation with good Russian families, in private apartments or in hotels, to suit the individual. Prices on application (eg. Prices for flats (apartments) vary with conditions - a basic flat costs $250-300 per month). A cultural program is included in the cost of the course (including visits to concerts, theatres, cinemas and the circus, and excursions and picnics to the countryside and the Black Sea Coast). Excursions to the Black Sea Coast can be arranged for additional cost to cover hotel and travel expenses. Help will be freely given in making business contacts anywhere in Russia for those who are interested.<br><br>Our school will organize official invitations on completion and receipt an application form. Help with travel arrangements will be provided if this is required. Krasnodar, itself , is situated in the southern-most region of Russia not far from the Black Sea with a subtropical climate making it one of the most pleasant places to live in Russia. It has a population of almost 1 500 000 and the city boasts 3 universities, 3 academies and various other establishments of higher education. There are 5 theatres, a circus and many museums. There are over 120 large businesses in the city. The cost of living is cheaper than in England or the USA and individuals should allow about $100 - 200 per month (depending on personal preferences).</p>
+                </div>
+                <img src="images/services/3.png" class="baggage">
+            </div>
+            <div class="offer__block" alt="left">
+                <img src="images/services/4.png">
+                <div class="offer_text">
+                    <h2>Все школьные предметы ОГЭ и ЕГЭ</h2>
+                    <div class="short__line"></div>
+                    <p>Мы предлагаем обучение по всем школьным предметам по вашему запросу. Наши квалифицированные преподаватели готовы помочь Вам или Вашему ребенку достичь высоких результатов в любой учебной дисциплине.<br><br>Также мы специализируемся на подготовке к ОГЭ и ЕГЭ. Индивидуальные и групповые занятия разработаны с учетом всех требований и стандартов, чтобы обеспечить успешное прохождение этих важных экзаменов.<br></p>
+                    <ul>
+                        <li>Русский язык</li>
+                        <li>Математика (базовая и профильная)</li>
+                        <li>Обществознание</li>
+                        <li>История</li>
+                        <li>География</li>
+                        <li>Биология</li>
+                        <li>Физика</li>
+                        <li>Химия</li>
+                        <li>Литература</li>
+                        <li>Информатика и ИКТ</li>
+                        <li>Иностранные языки (английский, немецкий, французский, испанский)</li>
+                    </ul>
+                    <p>Свяжитесь с нами, чтобы узнать больше и записаться!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бесплатно -->
+    <section class="free">
+        <div class="container">
+            <div class="free__text">
+                <h3>Собеседование и тестирование бесплатно!</h3>
+                <p><b>Бесплатно</b> также пробное занятие в группе</p>
+            </div>
         </div>
     </section>
 
     <!-- Отзывы -->
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
+            <div class="line"></div>
             <h2>Отзывы</h2>
             <div class="reviews__carousel">
                 <button class="carousel__button carousel__button--prev">←</button>
@@ -146,17 +261,29 @@
         </div>
     </section>
 
+    <!-- История центра -->
+    <section class="history">
+        <div class="container">
+            <div class="line"></div>
+            <h2>История центра</h2>
+            <h3>Создание Образовательного Центра</h3>
+            <p>Возникновение Образовательного Центра "L-WAY" относится к 1993 году, когда на базе Российско-Американского Института Международного Бизнеса (RAIIB) был создан факультет иностранных языков, а также курсы для желающих получить более углубленные знания по иностранным языкам.<br>Как самостоятельное негосударственное образовательное учреждение Образовательный Центр "L-WAY" был зарегистрирован 12 января 1998 года. Благодаря высокому качеству обучения, за короткое время своего существования Центр приобрел хорошую репутацию, что позволило обучить уже более тысячи слушателей.</p>
+            <h3>Наши преподаватели</h3>
+            <p>В Центре работают высококвалифицированные преподаватели, прошедшие обучение и стажировку за рубежом, владеющие современными методиками обучения. На более продвинутых уровнях и в зависимости от целей обучения, приглашаются преподаватели носителя языка из Великобритании и США.<br><br>Хотите присоединиться к команде наших преподавателей? Наша компания всегда рада новым талантам. Если Вы увлечены обучением и хотите внести свой вклад в развитие наших студентов, присылайте свое резюме на почту:<br><br>Мы ценим опыт и энтузиазм и всегда готовы рассмотреть кандидатуры квалифицированных специалистов.</p>
+            <h3>Кого мы обучаем</h3>
+            <p>В Центре проводят обучение иностранным языкам для всех желающих, независимо от возраста и образования, а также сотрудников организаций, предприятий и компаний, среди которых можно назвать такие как "Кубань-GSM", "Кипрский Банк развития", "Авиалинии Кубани" и другие.</p>
+        </div>
+    </section>
+
     <!-- Подвал -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer__info">
-                <!--p>Полное наименование: Частное Образовательное Учреждение Дополнительного Образования Образовательный Центр "Л-Вэй"</p>
-                <p>Юридический адрес: 350000, Краснодарский край, г. Краснодар, ул. Карасунская, д. 60, офис 28/2</p>
-                <p>Электронная почта: <a href="mailto:lway@mail.kubannet.ru">lway@mail.kubannet.ru</a></p>
-                <p>Телефон: <a href="tel:+79183972332">+7 (918) 397-23-32</a></p>
-                <p>Режим работы: Пн-Пт 09:00-20:00</p-->
-                <p>© 2026 Все права защищены</p>
-            </div>
+        <div class="footer__info">
+            <!--p>Полное наименование: Частное Образовательное Учреждение Дополнительного Образования Образовательный Центр "Л-Вэй"</p>
+            <p>Юридический адрес: 350000, Краснодарский край, г. Краснодар, ул. Карасунская, д. 60, офис 28/2</p>
+            <p>Электронная почта: <a href="mailto:lway@mail.kubannet.ru">lway@mail.kubannet.ru</a></p>
+            <p>Телефон: <a href="tel:+79183972332">+7 (918) 397-23-32</a></p>
+            <p>Режим работы: Пн-Пт 09:00-20:00</p-->
+            <p>© 2026 Все права защищены</p>
         </div>
     </footer>
 

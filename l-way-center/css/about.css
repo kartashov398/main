@@ -78,3 +78,22 @@
         width: 100%;
     }
 }
+
+/*=================================МОБИЛЬНЫЙ АДАПТИВ==========================================*/
+
+@media (max-width: 1024px) {
+    .about__table {
+        flex-direction: column;
+    }
+
+    .about__table span[alt="left__block"] {
+        border-right: none;
+        border-bottom: 2px solid rgb(26, 60, 165);
+    }
+
+    .trained__content {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+}

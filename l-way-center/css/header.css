@@ -5,9 +5,8 @@
 }
 
 .container__info {
-    display: flex;
     position: fixed;
-    justify-content: center;
+    place-items: center;
     z-index: 4;
     width: 100vw;
     margin: 0 auto;
@@ -18,8 +17,9 @@
 .header__info {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px;
+    width: 100%;
     max-width: 1200px;
 }
 

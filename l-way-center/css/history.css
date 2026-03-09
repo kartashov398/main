@@ -9,6 +9,7 @@
 .history__text {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     max-width: 1200px;
     place-items: left;
     place-self: center;
@@ -22,7 +23,7 @@
 .history__text h3 {
     text-align: left;
     color: var(--primary-color);
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 .history__text p {
